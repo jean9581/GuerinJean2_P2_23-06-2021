@@ -3,29 +3,79 @@
     <head>
         <meta charset="utf-8" />
         <link rel="stylesheet" href="style.css" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet"> 
+        <script src="https://kit.fontawesome.com/354c2a07dd.js" crossorigin="anonymous"></script>
         <title>reservia</title>
     </head>
 
     <body>
         <div id="bloc_page">
             <header>
-                <div class="container">
+                <section class="flexbetween">
                     <div class="logo">
-                        <img src="images/logo/Reservia.png" alt="Logo reservia" /> 
+                        <img 
+                            src="images/logo/Reservia.png" 
+                            alt="Logo reservia" 
+                            width="120"
+                            height="40"/> 
                     </div>
 
-                    <nav>
-                        <ul>
-                            <li><a  href="#hébergement">Hébergement</a>
-                                <span class="bouton"></span>
+                    <nav class="container">
+                        <ul class="flexaround sizelien">
+                            <li class="flexcenter sizelien bordureNav active">
+                                <a class="colorBleu decorationNone" 
+                                    href="#">Hébergement</a>
                             </li>
-                            <li><a  href="#Activité">Activité</a>
-                                <span class="bouton"></span>
+                            <li class="flexcenter sizelien bordureNav"> 
+                                <a class="colorNoir decorationNone " 
+                                    href="#">Activité</a>
                             </li>
-                            <li><a  href="#inscrire">S'inscrire</a></li>
+                            <li class="sizelien flexcenter">
+                                <a class="colorBleu decorationNone textGras" 
+                                href="#">S'inscrire</a>
+                            </li>
                         </ul>                
                     </nav> 
-                </div>   
+                </section> 
+                <section>
+                    <div>
+                        <h1 class="textGras">Trouvez votre hébergement pour des vacances de rêve</h1>
+                        <p>En plein centre ville ou en pleine nature</p>
+                    </div>
+
+                    <form class="flexstart">
+                        <div class="iconsize fontGris flexcenter">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div>
+                            <input class="recherche bordureNone" 
+                            type="search" 
+                            value="Marseille, France">
+                        </div>
+                        <button class="button bordureNone">Rechercher</button>
+                    </form> 
+
+                    <div class="flexstart filtre">
+                        <label>Filtres</label>
+                        <div>
+                            <i class="fas fa-money-bill-wave"></i>
+                            <label>Economique</label>
+                        </div>
+                        <div>
+                            <i class="fas fa-child"></i>
+                            <label>Familial</label>
+                        </div>
+                        <div>
+                            <i class="fas fa-heart"></i>
+                            <label>Romantique</label>
+                        </div>
+                        <div>
+                            <i class="fas fa-dog"></i>
+                            <label>Animaux autorisés</label>
+                        </div>
+                    </div>
+                </section>  
             </header> 
             <!--<div>
                 <d>Trouvez votre hébergement pour des vacances de rêves</d>
