@@ -6,7 +6,10 @@
 body
 {
     font-family: Raleway;
-    margin-left: 15px;
+}
+.marge-body
+{
+    margin-left: 70px;
 }
 .flex-center
 {
@@ -424,6 +427,12 @@ body
 .text-foot
 {
     color :rgb(0, 0, 0);
+}
+
+.nav-foot
+{
+    margin-top: 30px;
+    margin-right: 300px;
 }
 
 /*
