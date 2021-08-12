@@ -23,15 +23,15 @@
 
                         <nav class="container">
                             <ul class="flex-around size-lien">
-                                <li class="flex-center size-lien bordure-nav active">
-                                    <a class="color-blue decoration-none" 
-                                        href="#">Hébergement</a>
-                                </li>
-                                <li class="flex-center size-lien bordure-nav"> 
+                                <li class="flex-center size-lien bordure-nav lien"> 
                                     <a class="color-noir decoration-none " 
-                                        href="#">Activité</a>
+                                        href="#hebergement">Hébergement</a>
                                 </li>
-                                <li class="flex-center size-lien">
+                                <li class="flex-center size-lien bordure-nav lien"> 
+                                    <a class="color-noir decoration-none " 
+                                        href="#activite">Activité</a>
+                                </li>
+                                <li class="flex-center size-lien lien">
                                     <a class="color-blue decoration-none text-gras" 
                                     href="#">S'inscrire</a>
                                 </li>
@@ -90,7 +90,7 @@
                     </section>  
                 </header> 
                 
-                <section class="flex-section">
+                <section id="hebergement" class="flex-section">
                     <div class="section-hebergement">
                         <h3 class="text-hebergement text-gras">Hébergement à Marseille</h3>
                         <div class="flex-start">
@@ -221,33 +221,35 @@
                         </div>
                     </div>
                 </section>
-
-                <h3 class="text-activite text-gras">Activités à Marseille</h3>
-                <section class="section-activite">
-                    <article class="article-activite">
-                        <div class="image10 image-activite"></div>
-                        <h3 class="text-nam-activite">Vieux port</h3>
-                    </article>
-                    <article class="article-activite">
-                        <div class="image11 image-activite"></div>
-                        <h3 class="text-nam-activite">Fort de Pomègues</h3>
-                    </article>
-                    <article class="article-activite">
-                        <div class="image12 image-activite"></div>
-                        <h3 class="text-nam-activite">Îles du Frioul</h3>
-                    </article>
-                    <article class="article-activite">
-                        <div class="image13 image-activite"></div>
-                        <h3 class="text-nam-activite">Parc National des Calanques</h3>
-                    </article>
-                    <article class="article-activite">
-                        <div class="image14 image-activite"></div>
-                        <h3 class="text-nam-activite">Notre-Dame-de-la-Garde</h3>
-                    </article>
-                    <article class="article-activite">
-                        <div class="image15 image-activite"></div>
-                        <h3 class="text-nam-activite">Parc Longchamp</h3>
-                    </article>
+                <section  id="activite">
+                    <h3 class="text-activite text-gras">Activités à Marseille</h3>
+                    <div class="section-activite">
+                        
+                        <article class="article-activite">
+                            <div class="image10 image-activite"></div>
+                            <h3 class="text-nam-activite">Vieux port</h3>
+                        </article>
+                        <article class="article-activite">
+                            <div class="image11 image-activite"></div>
+                            <h3 class="text-nam-activite">Fort de Pomègues</h3>
+                        </article>
+                        <article class="article-activite">
+                            <div class="image12 image-activite"></div>
+                            <h3 class="text-nam-activite">Îles du Frioul</h3>
+                        </article>
+                        <article class="article-activite">
+                            <div class="image13 image-activite"></div>
+                            <h3 class="text-nam-activite">Parc National des Calanques</h3>
+                        </article>
+                        <article class="article-activite">
+                            <div class="image14 image-activite"></div>
+                            <h3 class="text-nam-activite">Notre-Dame-de-la-Garde</h3>
+                        </article>
+                        <article class="article-activite">
+                            <div class="image15 image-activite"></div>
+                            <h3 class="text-nam-activite">Parc Longchamp</h3>
+                        </article>
+                    </div>
                 </section>
             </div>
             <footer class="foot"> 
@@ -255,15 +257,15 @@
                     <div class="nav-foot">
                         <ul>
                             <li><h4>A propos</h4></li>
-                            <li class="">
+                            <li class="marge-li">
                                 <a class="decoration-none text-foot" 
                                     href="#">Fonctionnement du site</a>
                             </li>
-                            <li class="">
+                            <li class="marge-li">
                                 <a class="decoration-none text-foot" 
                                     href="#">Condition générales de vente</a>
                             </li>
-                            <li class="">
+                            <li class="marge-li">
                                 <a class="decoration-none text-foot" 
                                     href="#">Données de confidentialité</a>
                             </li>
@@ -272,11 +274,11 @@
                     <div class="nav-foot">
                         <ul>
                             <li><h4>Nos hérbergements</h4></li>
-                            <li class="">
+                            <li class="marge-li">
                                 <a class="decoration-none text-foot" 
                                     href="#">Charte qualité</a>
                             </li>
-                            <li class="">
+                            <li class="marge-li">
                                 <a class="decoration-none text-foot" 
                                     href="#">Soumettre votre hôtel</a>
                             </li>
@@ -285,11 +287,11 @@
                     <div class="nav-foot">
                         <ul>
                             <li><h4>Assistance</h4></li>
-                            <li class="">
+                            <li class="marge-li">
                                 <a class="decoration-none text-foot" 
                                     href="#">Centre d'aide</a>
                             </li>
-                            <li class="">
+                            <li class="marge-li">
                                 <a class="decoration-none text-foot" 
                                     href="#">Nous contacter</a>
                             </li>
