@@ -312,24 +312,34 @@ body
 /*section populaire*/
 .image-populair
 {
-    background-size: cover;
+    /* background-size: cover;
     background-position: center;
-    height: 10em;
-    width: 10em;
+    height: 10em; */
+    width: 100%;
     border-radius: 1em 0  0 1em;
 }
 .article-populair
 {
     width: 80%;
-    height: 10em;
-    margin-left: 2rem;
-    margin-bottom: 2em;
+    /* height: 10em; */
+    margin: 1em auto;
     border-radius: 1em;
     background-color: #ffffff;
     overflow: hidden;
-    padding: 1%;
+    padding: 1em;
     box-shadow: rgba(3, 3, 3, 0.2) 0px 7px 29px 0px;
 
+}
+.article-populair-description,
+.article-populair-img {
+    width: 50%;
+}
+.article-populair-description {
+    padding: 0.5rem;
+}
+.article-populair-title {
+    font-size: 1.2rem;
+    margin: .4rem 0;
 }
 .logo-populair
 {
@@ -387,7 +397,8 @@ body
 .section-activite
 {
     height: 50em;
-    width: 110em;
+    width: 100%;
+    /* width: 110em; */
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
