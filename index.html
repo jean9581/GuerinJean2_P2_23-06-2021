@@ -10,36 +10,40 @@
     </head>
 
     <body>
-        <div id="bloc-page">
+        <div id="">
             <div class="marge-body">
                 <header>
                     <!-- entête avec logo et nav -->
-                    <section class="flex-between">
-                        <div class="logo">
+                    <section class="head-flex">
+                        <div class=" push-right">
                             <img class="logo-img"
                                 src="./images/logo/Reservia@3x.png" 
                                 alt="Logo reservia"/> 
                         </div>
 
-                        <nav class="container">
-                            <ul class="flex-around size-lien">
-                                <li class="flex-center size-lien bordure-nav lien"> 
-                                    <a class="color-noir decoration-none " 
+                        <nav class="nav-flex">
+                            <div class="ul-flex">
+                                <li class="lien flex-center size-lien"> 
+                                    <a class="color-noir decoration-none marge-nav flex-center" 
                                         href="#hebergement">Hébergement</a>
                                 </li>
-                                <li class="flex-center size-lien bordure-nav lien"> 
-                                    <a class="color-noir decoration-none " 
+                                <li class="flex-center size-lien lien"> 
+                                    <a class="color-noir decoration-none marge-nav flex-center" 
                                         href="#activite">Activité</a>
                                 </li>
-                                <li class="flex-center size-lien lien">
-                                    <a class="color-blue decoration-none text-gras" 
-                                    href="#">S'inscrire</a>
-                                </li>
-                            </ul>                
+                            </div>                
                         </nav> 
+                        <nav class="">
+                            <div class="flex-center size-lien">
+                                <a class="color-blue decoration-none text-gras" 
+                                href="#">S'inscrire</a>
+                            </div>                
+                        </nav> 
+
                     </section> 
+                </header>     
                     <!-- titre et recherche avec filtres -->
-                    <section>
+                <section>
                         <div>
                             <h1 class="text-gras">Trouvez votre hébergement pour des vacances de rêve</h1>
                             <p>En plein centre ville ou en pleine nature</p>
@@ -57,26 +61,26 @@
                             <button class="button bordure-none" type="button">Rechercher</button>
                         </form> 
                         <!-- Filtres -->
-                        <form class="flex-start">
+                        <form class="form-filtre">
                             <p class="filtre text-gras">Filtres</p>
-                            <div class="flex-start filtre">
+                            <div class="form-filtre filtre">
                                 <div class="border-filtre flex-center">
-                                    <div class="border-icon flex-center icon-filtres">
+                                    <div class="border-icon flex-center">
                                         <i class="fas fa-money-bill-wave"></i></div>
                                     <button class="button-filtres bordure-none" type="button">Economique</button>
                                 </div>
                                 <div class="border-filtre flex-center">
-                                    <div class="border-icon flex-center icon-filtres">
+                                    <div class="border-icon flex-center">
                                         <i class="fas fa-child"></i></div>
                                     <button class="button-filtres bordure-none" type="button">Familial</button>
                                 </div>
                                 <div class="border-filtre flex-center">
-                                    <div class="border-icon flex-center icon-filtres">
+                                    <div class="border-icon flex-center">
                                         <i class="fas fa-heart"></i></div>
                                     <button class="button-filtres bordure-none" type="button">Romantique</button>
                                 </div>
                                 <div class="border-filtre flex-center">
-                                    <div class="border-icon flex-center icon-filtres">
+                                    <div class="border-icon flex-center">
                                         <i class="fas fa-dog"></i></div>
                                     <button class="button-filtres bordure-none" type="button">Animaux autorisés</button>
                                 </div>
@@ -87,15 +91,19 @@
                             <span class="info-logo flex-center"><i class="fas fa-info"></i></span>
                             <p class="info-text">Plus de 500 logements sont disponibles dans cette ville</p>
                         </aside>  
-                    </section>  
-                </header> 
+                </section>  
+                
                 
                 <section id="hebergement" class="flex-section">
                     <div class="section-hebergement">
                         <h3 class="text-hebergement text-gras">Hébergement à Marseille</h3>
-                        <div class="flex-start">
+                        <div class="flex-hebergement">
                             <article class="article-hebergement">
-                                <div class="image1 image-hebergement"></div>
+                                <div class="">
+                                    <img class="image-hebergement"
+                                        src="./images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
+                                        alt="cannebiére"/> 
+                                </div>
                                 <h3 class="text-nam">Auberge de la cannebiére</h3>
                                 <p class=" text-night">Nuit à partir de 25€</p>
                                 <div class="marge-star">
@@ -107,7 +115,11 @@
                                 </div>
                             </article>
                             <article class="article-hebergement">
-                                <div class="image2 image-hebergement"></div>
+                                <div class="">
+                                    <img class="image-hebergement"
+                                        src="./images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg"
+                                        alt="cannebiére"/> 
+                                </div>
                                 <h3 class="text-nam">Hôtel du port</h3>
                                 <p class=" text-night">Nuit à partir de 52€</p>
                                 <div class="marge-star">
@@ -119,7 +131,11 @@
                                 </div>
                             </article>
                             <article class="article-hebergement">
-                                <div class="image3 image-hebergement"></div>
+                                <div class="">
+                                    <img class="image-hebergement"
+                                        src="./images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg"
+                                        alt="cannebiére"/> 
+                                </div>
                                 <h3 class="text-nam">Hôtel des mouettes</h3>
                                 <p class=" text-night">Nuit à partir de 76€</p>
                                 <div class="marge-star">
@@ -130,10 +146,14 @@
                                     <i class="fas fa-star icon-star color-gris"></i>
                                 </div>
                             </article>
-                        </div>    
-                        <div class="flex-start">
+                        
+                            
                             <article class="article-hebergement">
-                                <div class="image4 image-hebergement"></div>
+                                <div class="">
+                                    <img class="image-hebergement"
+                                        src="./images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg"
+                                        alt="cannebiére"/> 
+                                </div>
                                 <h3 class="text-nam">Hôtel de la mer</h3>
                                 <p class=" text-night">Nuit à partir de 46€</p>
                                 <div class="marge-star">
@@ -145,7 +165,11 @@
                                 </div>
                             </article>
                             <article class="article-hebergement">
-                                <div class="image5 image-hebergement"></div>
+                                <div class="">
+                                    <img class="image-hebergement"
+                                        src="./images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg"
+                                        alt="cannebiére"/> 
+                                </div>
                                 <h3 class="text-nam">Auberge du panier</h3>
                                 <p class=" text-night">Nuit à partir de 23€</p>
                                 <div class="marge-star">
@@ -157,7 +181,11 @@
                                 </div>
                             </article>
                             <article class="article-hebergement">
-                                <div class="image6 image-hebergement"></div>
+                                <div class="">
+                                    <img class="image-hebergement"
+                                        src="./images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg"
+                                        alt="cannebiére"/> 
+                                </div>
                                 <h3 class="text-nam">Hôtel chez Amina</h3>
                                 <p class=" text-night">Nuit à partir de 96€</p>
                                 <div class="marge-star">
@@ -177,7 +205,11 @@
                         </h3>
                         <div>
                             <article class="flex-start article-populair">
-                                <div class="image7 image-populair"></div>
+                                <div class="">
+                                    <img class="image-populair"
+                                        src="./images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
+                                        alt="cannebiére"/> 
+                                </div>
                                 <div>
                                     <h3 class="text-nam-populair">Hôtel du soleil du <br> matin</h3>
                                     <p class=" text-night-populair">Nuit à partir de 128€</p>
@@ -191,7 +223,11 @@
                                 </div>
                             </article>
                             <article class="flex-start article-populair">
-                                <div class="image8 image-populair"></div>
+                                <div class="">
+                                    <img class="image-populair"
+                                        src="./images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg"
+                                        alt="cannebiére"/> 
+                                </div>
                                 <div>
                                     <h3 class="text-nam-populair">Au coeurs de l'eau chambres d'hôtes</h3>
                                     <p class=" text-night-populair">Nuit à partir de 71€</p>
@@ -205,7 +241,11 @@
                                 </div>
                             </article>
                             <article class="flex-start article-populair">
-                                <div class="image9 image-populair"></div>
+                                <div class="">
+                                    <img class="image-populair"
+                                        src="./images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg"
+                                        alt="cannebiére"/> 
+                                </div>
                                 <div>
                                     <h3 class="text-nam-populair">Hotel tout bleu et blanc</h3>
                                     <p class=" text-night-populair">Nuit à partir de 68€</p>
@@ -226,27 +266,51 @@
                     <div class="section-activite">
                         
                         <article class="article-activite">
-                            <div class="image10 image-activite"></div>
+                            <div class="">
+                                <img class="image-activite"
+                                    src="./images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
+                                    alt="cannebiére"/> 
+                            </div>
                             <h3 class="text-nam-activite">Vieux port</h3>
                         </article>
                         <article class="article-activite">
-                            <div class="image11 image-activite"></div>
+                            <div class="">
+                                <img class="image-activite"
+                                    src="./images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg"
+                                    alt="cannebiére"/> 
+                            </div>
                             <h3 class="text-nam-activite">Fort de Pomègues</h3>
                         </article>
                         <article class="article-activite">
-                            <div class="image12 image-activite"></div>
+                            <div class="">
+                                <img class="image-activite"
+                                    src="./images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg"
+                                    alt="cannebiére"/> 
+                            </div>
                             <h3 class="text-nam-activite">Îles du Frioul</h3>
                         </article>
                         <article class="article-activite">
-                            <div class="image13 image-activite"></div>
+                            <div class="">
+                                <img class="image-activite"
+                                    src="./images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
+                                    alt="cannebiére"/> 
+                            </div>
                             <h3 class="text-nam-activite">Parc National des Calanques</h3>
                         </article>
                         <article class="article-activite">
-                            <div class="image14 image-activite"></div>
+                            <div class="">
+                                <img class="image-activite"
+                                    src="./images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg"
+                                    alt="cannebiére"/> 
+                            </div>
                             <h3 class="text-nam-activite">Notre-Dame-de-la-Garde</h3>
                         </article>
                         <article class="article-activite">
-                            <div class="image15 image-activite"></div>
+                            <div class="">
+                                <img class="image-activite"
+                                    src="./images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg"
+                                    alt="cannebiére"/> 
+                            </div>
                             <h3 class="text-nam-activite">Parc Longchamp</h3>
                         </article>
                     </div>
