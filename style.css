@@ -322,9 +322,7 @@ body
 {
     /* background-size: cover;
     background-position: center;
-    height: 10em; */
-    width: 100%;
-    
+    height: 10em; */  
 }
 .article-populair
 {
@@ -338,16 +336,13 @@ body
 
 }
 .article-populair-img {
-    height: 100%;
+    height:100%;
+    width: 35%;
     border-radius: 1em 0  0 1em;
     overflow: hidden;
 }
-.article-populair-description,
-.article-populair-img {
-    width: 70%;
-}
 .article-populair-description {
-    padding: 0.5rem;
+    padding: 6%;
 }
 .article-populair-title {
     font-size: 1.2rem;
@@ -388,16 +383,46 @@ body
 
 .image-activite
 {
+    height: 42em;
     border-radius: 1em 1em  0 0;
+}
+.image-activite-2
+{
+    height: 17em;
+    width: 100%;
+    border-radius: 1em 1em  0 0;
+}
+.div-activite
+{
+    width: 20%;
+    height: 100%;
+    
+}
+.div-activite-2
+{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-around;
 }
 .article-activite
 {
-    width: 18em;
+    height: 90%;
     border-radius: 15px;
     background-color: #ffffff;
     overflow: hidden;
     box-shadow: rgba(3, 3, 3, 0.2) 0px 7px 29px 0px;
-
+}
+.article-activite-2
+{
+    
+    height: 40%;
+    border-radius: 15px;
+    background-color: #ffffff;
+    overflow: hidden;
+    box-shadow: rgba(3, 3, 3, 0.2) 0px 7px 29px 0px;
 }
 
 .text-nam-activite
@@ -410,13 +435,10 @@ body
 {
     height: 50em;
     width: 100%;
-    /* width: 110em; */
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
-    justify-content: space-around;
-    
-    
+    justify-content: space-around;    
 }
  /* footer */
 
@@ -444,15 +466,13 @@ body
 
 /* responsive */
 
-@media screen and (max-width: 1490px)
+@media screen and (max-width: 1355px)
 {
     .marge-body
     {
         margin-left:2em;
     }
 
-    
- 
     .push-right 
     {
         margin-left: 2em;
@@ -461,17 +481,6 @@ body
     {
         box-shadow: 0em 0.1em 0em blue;
         cursor: pointer;
-    }
-    .button
-    {
-        height: 2.8em;
-        width: 2.8em;
-        font-size: 1.1em;
-        color: #0065FC;
-        font-weight: bold;
-        background-color: #0065FC;
-        border-radius: 0.5em 0.5em 0.5em 0.5em;
-        border: 0.2em solid #ffffff;
     }
 
     .form-filtre
@@ -517,8 +526,8 @@ body
 
     .section-hebergement
     {
-        width: 60em;
-        height: 44em;
+        width: 100%;
+        height: 100%;
         margin-right: 4em;
         border-radius: 1.5em;
         background-color: #ffffff;
@@ -533,7 +542,7 @@ body
     
 }
 
-@media screen and (max-width: 600px)
+@media screen and (max-width: 660px)
 {
     
     .head-flex
@@ -569,8 +578,84 @@ body
     {
         width: 100%;
         height: 44em;
-        border-radius: 1em;
         background-color: #f2f2f2;
+    }
+    .logo-populair
+    {
+        margin-left: 2em;
+        margin-top: 0em;
+    }
+    .flex-hebergement
+    {
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        flex-direction: column;
+    }
+    .article-hebergement
+    {
+        width: 90%;
+        height: 13em;
+        margin: 1em auto;
+        border-radius: 1em;
+        background-color: #ffffff;
+        overflow: hidden;
+        padding: 1%;
+        box-shadow: rgba(3, 3, 3, 0.2) 0px 7px 29px 0px;
+    }
+    .article-populair
+    {
+        width: 90%;
+        height: 23%;
+        margin: 1em auto;
+        border-radius: 1em;
+        background-color: #ffffff;
+        padding: 1%;
+        box-shadow: rgba(3, 3, 3, 0.2) 0px 7px 29px 0px;
+
+    }
+    .article-populair-img {
+        height:100%;
+        width: 35%;
+        border-radius: 1em 0  0 1em;
+        overflow: hidden;
+    }
+    .section-activite
+    {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;   
+    }
+    
+    .image-activite,.image-activite-2
+    {
+        height: 100%;
+        width: 35%;
+        border-radius: 1em 1em  0 0;
+    }
+    .div-activite
+    {
+        width: 90%;
+        height: 44em;
+        
+    }
+    .div-activite-2
+    {
+        width: 90%;
+        height: 20%;
+        display: flex;
+        flex-direction: column;
+    }
+    .article-activite,.article-activite-2
+    {
+        width: 90%;
+        height: 13em;
+        margin: 1em auto;
+        border-radius: 1em;
+        background-color: #ffffff;
+        overflow: hidden;
+        box-shadow: rgba(3, 3, 3, 0.2) 0px 7px 29px 0px;
     }
 }
 /*
